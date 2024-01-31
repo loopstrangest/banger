@@ -1,0 +1,27 @@
+**DONE**
+Create default text for level 14
+Create and implement logic for level 15
+Create and implement logic for level 16
+Improve look of rules modal
+Add process for banger_p
+Add process for banger_mlc
+Improve look of Banger modal
+Create end screen to show upon beating level 16
+Set fire emoji as tab icon
+
+I love you.
+I love you so much.
+I love you so much that I'm going to keep writing these messages for you.
+I love you so much that I'm going to keep making games for you.
+I love you so much that I'm going to keep making art for you.
+I love you so much that I'm going to keep making music for you.
+I love you so much that I'm going to keep making videos for you.
+I love you so much that I'm going to keep making software for you.
+I love you so much that I'm going to keep making websites for you.
+I love you so much that I'm going to keep making books for you.
+I love you so much that I'm going to keep making podcasts for you.
+I love you so much that I'm going to keep making courses for you.
+I love
+
+Banger is a game about language, but it's also a game about life.
+I hope you enjoyed it. I love you.
