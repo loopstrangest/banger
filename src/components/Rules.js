@@ -1,7 +1,7 @@
 /** @format */
 
 import { Modal, IconButton, Typography, Box } from "@mui/material";
-import { QuestionMark, Twitter, Home, Mail } from "@mui/icons-material";
+import { QuestionMark, Twitter, Home, Mail, Close } from "@mui/icons-material";
 import { useState, useEffect } from "react";
 
 const Rules = ({ maxLevelComplete }) => {
@@ -26,8 +26,8 @@ const Rules = ({ maxLevelComplete }) => {
           color: "white",
           opacity: 0.5,
           position: "fixed",
-          top: 1,
-          right: 1,
+          top: 0,
+          right: 8,
         }}
       >
         <QuestionMark sx={{ fontSize: "36px" }} />
@@ -54,6 +54,18 @@ const Rules = ({ maxLevelComplete }) => {
             color: "white",
           }}
         >
+          <IconButton
+            aria-label="close"
+            onClick={handleClose}
+            sx={{
+              color: "white",
+              position: "absolute",
+              right: 8,
+              top: 8,
+            }}
+          >
+            <Close />
+          </IconButton>
           <Typography
             id="modal-modal-title"
             variant="h5"

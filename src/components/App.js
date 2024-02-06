@@ -21,11 +21,9 @@ function App() {
     const storedLevel = getComplete();
     const allLevels =
       process(localStorage.getItem("banger_p") || "") === config;
-    console.log("storedLevel", storedLevel);
     if (allLevels) {
-      console.log("storedLevel", storedLevel);
       return Number(storedLevel) + 1;
-    } else if (storedLevel > 8) {
+    } else if (storedLevel >= 8) {
       return 8;
     } else {
       return Math.max(Number(storedLevel) + 1, 1);
@@ -35,7 +33,6 @@ function App() {
   useEffect(() => {
     const storedMaxLevelComplete = getComplete();
     if (storedMaxLevelComplete && storedMaxLevelComplete > 0) {
-      console.log("storedMaxLevelComplete", storedMaxLevelComplete);
       setMaxLevelComplete(Number(storedMaxLevelComplete));
     }
   }, []);

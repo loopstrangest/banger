@@ -9,7 +9,6 @@ export const setComplete = (level) => {
 
 export const getComplete = () => {
   const newProcessValue = localStorage.getItem("banger_mlc") || 0;
-  console.log("15:", newProcess(15));
   for (let i = 0; i <= 16; i++) {
     if (newProcess(i.toString()) === newProcessValue) {
       return i;

@@ -1,7 +1,6 @@
 /** @format */
 
 import englishWords from "an-array-of-english-words";
-import { syllable } from "syllable";
 
 const getUniqueWords = (text) => {
   const words = text
@@ -256,7 +255,6 @@ export const levelThirteenLogic = (text) => {
   for (let i = 0; i < allWords.length - 1; i++) {
     const firstWord = allWords[i];
     if (firstWord === "the") {
-      console.log(firstWord);
     }
     const secondWord = allWords[i + 1];
     if (firstWord[firstWord.length - 1] === secondWord[0]) {
@@ -285,7 +283,6 @@ export const levelFourteenLogic = (text) => {
       const vowels = ["a", "e", "i", "o", "u"];
       let hasAllVowels = vowels.every((v) => pairString.includes(v));
       if (hasAllVowels && pairString.length === vowels.length) {
-        console.log(pair);
         count++;
       }
     }
@@ -309,14 +306,12 @@ export const levelFifteenLogic = (text) => {
         if (word.length < 5) return false;
         for (let i = 0; i <= word.length - 4; i++) {
           if (englishWords.includes(word.substring(i, i + 4))) {
-            console.log(word.substring(i, i + 4));
             return true;
           }
         }
         return false;
       });
       if (hasFourLetterWord) {
-        console.log(pair);
         count++;
       }
     }

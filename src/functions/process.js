@@ -7,7 +7,6 @@ export const process = (str) => {
     hash = (hash << 5) - hash + char;
     hash = hash & hash;
   }
-  console.log(hash.toString());
   return hash.toString();
 };
 

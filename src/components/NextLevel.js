@@ -84,7 +84,6 @@ const NextLevel = ({ level, maxLevelComplete, setLevel }) => {
           onSubmit={(e) => {
             e.preventDefault();
             const password = e.target.elements.password.value;
-            console.log("submitted:", password);
             localStorage.setItem("banger_p", password);
             if (password === "blossoming") {
               setShowCheckmark(true);

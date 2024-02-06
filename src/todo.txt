@@ -8,6 +8,7 @@ Add process for banger_mlc
 Improve look of Banger modal
 Create end screen to show upon beating level 16
 Set fire emoji as tab icon
+Fix level 8 bug
 
 I love you.
 I love you so much.

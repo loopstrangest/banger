@@ -179,6 +179,11 @@ const Textbox = ({
         ref={textFieldRef}
         value={text}
         onChange={handleChange}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && e.ctrlKey) {
+            handleSend();
+          }
+        }}
         variant="outlined"
         multiline
         rows={6}
